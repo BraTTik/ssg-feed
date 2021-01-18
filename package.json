@@ -1,0 +1,33 @@
+{
+  "name": "news-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react-redux": "^7.1.15",
+    "@types/styled-components": "^5.1.7",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "next": "^10.0.5",
+    "next-redux-wrapper": "^6.0.2",
+    "node-fetch": "^2.6.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "styled-components": "^5.2.1",
+    "ts-node": "^9.1.1"
+  },
+  "scripts": {
+    "serve": "ts-node -O '{\"module\": \"commonjs\"}' ./server/index.ts",
+    "dev": "concurrently --kill-others \"yarn serve\" \"next\"",
+    "build": "next build",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.20",
+    "@types/react": "^17.0.0",
+    "typescript": "^4.1.3"
+  }
+}
